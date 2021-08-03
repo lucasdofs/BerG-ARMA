@@ -28,7 +28,7 @@ shapiro.test(ufit$resid)
 #X=cbind(cos(2*pi*(1:(n))/12))
 #X=as.numeric(y>2)
 X_new=cbind(1,X)
-
+ 
 #Com seno e cos
 beta=c(0.1);phi=c(0.1,0.2);theta=c(0.0);nu=0.95
 fitt=bergARMA(beta,phi,theta,nu,y,rep(1,n),link="log")
